@@ -17,11 +17,13 @@ public class LeetCode_283_541 {
     // 一次遍历
     public void solution2(int[] nums) {
         int pivot = 0;
-        for (int i=0; i < nums.length; i++) {
+        for (int i=0; i < nums.length; ++i) {
             if (nums[i] != 0) {
-                int temp = nums[i];
-                nums[i] = nums[pivot];
-                nums[pivot++] = temp;
+                nums[pivot] = nums[i];
+                if (i != pivot) {
+                    nums[i] = 0;
+                }
+                pivot++;
             }
         }
     }
