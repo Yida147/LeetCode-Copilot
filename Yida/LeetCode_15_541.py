@@ -34,3 +34,4 @@ class Solution:
                 # 如果和大于零，说明三数之和偏小，由于排过序，移动左指针可以使三数之和变大
                 else:
                     left += 1
+        return res
