@@ -2,6 +2,7 @@ from typing import List
 
 
 class Solution:
+    # Ê±¼ä¸´ÔÓ¶ÈO(n^2)
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         nums.sort()
         n = len(nums)

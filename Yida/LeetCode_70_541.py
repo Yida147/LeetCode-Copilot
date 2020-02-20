@@ -1,5 +1,6 @@
 class Solution(object):
 
+    #  ±º‰∏¥‘”∂»£∫O(n)
     def climbStairs(self, n):
         if n <= 2: return n
         f1, f2, f3 = 1, 2, 3
