@@ -2,7 +2,7 @@ from typing import List
 
 
 class Solution:
-    def treeSum(self, nums: List[int]) -> List[List[int]]:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
         nums.sort()
         n = len(nums)
         res = []
