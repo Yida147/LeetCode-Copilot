@@ -6,11 +6,15 @@ import java.util.ArrayList;
  * @Description  : My queue
  */
 class Queue {
-    private ArrayList<Integer> elements;
+    private final ArrayList<Integer> elements;
     private int pointer;
 
     public Queue() {
         this.elements = new ArrayList<>();
+    }
+
+    public int getPointer() {
+        return pointer;
     }
 
     public int size() {
@@ -21,7 +25,7 @@ class Queue {
         return this.size() == 0;
     }
 
-    public void add(Integer e) {
+    public void add(final Integer e) {
         this.elements.add(e);
     }
 
